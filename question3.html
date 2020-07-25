@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Question3</title>
+</head>
+<body>
+    <h2 id="time"></h2>
+    <script>
+        let username=prompt("enter your name");
+        document.write("welcome "+ username);
+         const currenttime=document.getElementById("time");
+        function clock()
+        {
+            let date=new Date();
+            let time= date.toLocaleTimeString();
+
+            currenttime.innerText=time;
+        }
+        setInterval(clock,1000);
+        document.body.classList.toggle("dark_mode");
+    </script>
+</body>
+</html>
